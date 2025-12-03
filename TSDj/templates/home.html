@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for post in post_list%}
+  <div class="post-entry">
+    <h2><a href="">{{ post.title}}</a></h2>
+    <p>{{ post.body}}</p> 
+  </div>
+{% endfor %}
+{% endblock content %}
+
+{% comment %} {% block body %}
+
+<h1>Work in Progress </h1>
+{% endblock body %} {% endcomment %}

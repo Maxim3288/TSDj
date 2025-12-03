@@ -1,18 +1,31 @@
 <!DOCTYPE html>
+{% load static %}
+
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{% block title %}
-    Base Title
-    {% endblock title  %}</title>
-</head>
-<body>
-{% include "componets/navbar.html" %}
-{% block body %}
-Base Body!
-{% endblock body %}
-<footer>
-    &copy; Django Task
-</footer>
-</body>
+  <head>
+      
+      <meta charset="UTF-8">
+      <title>Django Blog</title>
+   
+      {% comment %} <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap"
+      rel="stylesheet"> {% endcomment %}
+      {% comment %} <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad+Guides&family=Science+Gothic:wght@100..900&display=swap"
+      rel="stylesheet"> {% endcomment %}
+
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+US+Trad+Guides&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+      
+      {% comment %} <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap"
+      rel="stylesheet"> {% endcomment %}
+      <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  </head>
+  <body>
+    <header>
+      <h1><a href="{% url 'home' %}">Django blog</a></h1>
+    </header>
+    <div>
+      {% block content %}
+      {% endblock content %}
+    </div>
+  </body>
 </html>
