@@ -12,7 +12,7 @@ header {
 }
 header h1 a {
     
-    color:red;
+    color: crimson;
     text-decoration: none;
 }
 
@@ -41,10 +41,11 @@ header h1 a {
 }
 
 .post-entry p {
+    background-color: aliceblue;
     /* font-family: "Pacifico", cursive; */
     /* font-family: "Bonheur Royale", cursive; */
     font-family: "Coming Soon", cursive;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     font-style: normal;
     margin: 0;
